@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="Saran raj">
+        <update tableName="user">
+            <column name="lastname" value="Saran"/>
+            <where> firstname= 'Jane' AND lastname = 'Doe' </where>
+        </update>
+    </changeSet>
+
+    <changeSet id="1" author="Mohan">
+        <update tableName="user">
+            <column name = "firstname" value="Gunasekaran"/>
+            <where> firstname = 'Jane' AND lastname = 'Saran' </where>
+        </update>
+    </changeSet>
+</databaseChangeLog>
